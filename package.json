@@ -1,0 +1,27 @@
+{
+  "name": "js-7.6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "PC:Chrome": "cypress run --browser chrome --headless",
+    "PC:FireFox": "cypress run --browser firefox --headless",
+    "MobileChrome": "cypress run --browser chrome --config-file cypress.env.config.js --headed",
+    "MobileFireFox": "cypress run --browser firefox --config-file cypress.env.config.js --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BekkerV8/JS-7.6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BekkerV8/JS-7.6/issues"
+  },
+  "homepage": "https://github.com/BekkerV8/JS-7.6#readme",
+  "dependencies": {
+    "cypress": "^12.1.0"
+  }
+}

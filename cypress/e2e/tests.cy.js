@@ -15,7 +15,7 @@ describe("When user is on login page, user", () => {
   //авторизации с неверным логином
   it("Should not be able to login with empty email", () => {
     cy.visit("localhost:3000");
-    cy.login("bropet@Gmail.ru ", "111");
+    cy.login("", "123");
     cy.get("#mail")
       .then(($el) => $el[0].checkValidity())
       .should("be.false");

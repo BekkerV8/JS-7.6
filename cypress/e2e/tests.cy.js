@@ -5,7 +5,7 @@ describe("When user is on login page, user", () => {
     cy.contains("Books list");
   });
 
-  //авторизациz
+  //авторизация
   it("Should be able to login with correct email and password", () => {
     cy.visit("localhost:3000");
     cy.login("bropet@mail.ru", "123");

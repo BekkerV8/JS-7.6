@@ -15,10 +15,10 @@ describe("When user is on login page, user", () => {
   //авторизации с неверным логином
   it("Should not be able to login with empty email", () => {
     cy.visit("localhost:3000");
-    cy.login("", "123");
-    cy.get("#mail")
-      .then(($el) => $el[0].checkValidity())
-      .should("be.false");
+    cy.login(" ", "123");
+    cy.get("#mail").then(($el) => {
+      expect($el[0].checkValidity()).eq(false);
+    });
   });
 
   //добавление книги
